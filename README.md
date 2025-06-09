@@ -21,7 +21,8 @@
  Para poder ejecutar correctamente esta aplicación hay que tener:
  - IDE Eclipse (recomendable la versión profesional)
  - Tener instalado un descompresor de archivos como Winrar
- - Tener JDK (yo he usado el JFK 22) instalado en el ordenador para poder desarrollar la aplicación y las librerías de Java para qeu pueda ejecutarse el programa sin problemas 
+ - Tener JDK (yo he usado el JDK 22) instalado en el ordenador para poder desarrollar la aplicación
+ - Tener las librerías de MySQL Connectors para que pueda utilizarse la base de datos sin problema ([enlace aquí](https://dev.mysql.com/downloads/connector/j/)). Yo estoy usando la versión 9.3 
  - Tener instalada alguna herramienta online o en el ordenador para poder crear una base de datos y poder ejecutar las tablas de almacenamiento de los datos
 
  - El archivo ``.env`` se usa para gestionar las credenciales y configuración de la base de datos. Este archivo viene con las credenciales vacías para que se rellenen con la información de la Base de Datos que se vaya a utilizar. Así también se evitan problemas de seguridad.
