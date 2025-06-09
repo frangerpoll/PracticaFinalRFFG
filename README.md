@@ -1,9 +1,7 @@
 # PRÁCTICA FINAL RIPOLL FELIPE FRANCISCO GERARDO
 
 ##
-##
-#
-#
+
 
 ## ¿QUÉ ES AHORRAKART?
 ### - Ahorrakart es una aplicación diseñada para que los usuarios lleven una gestión de los gastos fijo, variables e inesperados que puedan tener sus vehículos así como llevar una lista de los mismo con sus características principales
@@ -21,9 +19,9 @@
  Para poder ejecutar correctamente esta aplicación hay que tener:
  - IDE Eclipse (recomendable la versión profesional)
  - Tener instalado un descompresor de archivos como Winrar
- - Tener JDK (yo he usado el JDK 22) instalado en el ordenador para poder desarrollar la aplicación
- - Tener las librerías de MySQL Connectors para que pueda utilizarse la base de datos sin problema ([enlace aquí](https://dev.mysql.com/downloads/connector/j/)). Yo estoy usando la versión 9.3 
- - Tener instalada alguna herramienta online o en el ordenador para poder crear una base de datos y poder ejecutar las tablas de almacenamiento de los datos
+ - Tener JDK (en este proyecto se está usando el JDK 22) instalado en el ordenador para poder desarrollar la aplicación
+ - Tener las librerías de MySQL Connectors para que pueda utilizarse la base de datos sin problema ([enlace aquí](https://dev.mysql.com/downloads/connector/j/)). Para este proyecto se está usando la versión 9.3 
+ - Tener instalada alguna herramienta de diseño de bases de datos como **MySQL Workbench**  por si se quiere comprobar que el script ``PracticaFinalRFFG.sql`` que crea la base de datos, funciona correctamente 
 
  - El archivo ``.env`` se usa para gestionar las credenciales y configuración de la base de datos. Este archivo viene con las credenciales vacías para que se rellenen con la información de la Base de Datos que se vaya a utilizar. Así también se evitan problemas de seguridad.
  
@@ -51,14 +49,14 @@
  - Crear la base de datos ejecutando el script ``PracticaFinalRFFG.sql`` que se encuentra dentro de la carpeta PracticaFinalRFFG en:
  _PracticaFinalRFFG\src\base_de_datos\PracticaFinalRFFG.sql_
  
- - Asegurarse de que el archivo .env contenga:
+ - Asegurarse de que el archivo .env contenga todos estos campos y estén rellenos con tus datos:
 
     ````
-    DB_HOST=localhost
-    DB_PORT=3306
-    DB_DATABASE=PracticaFinalRFFG
-    DB_USERNAME=root
-    DB_PASSWORD=tu_contraseña
+    DB_HOST= enlace a la ubicación de la BBDD
+    DB_PORT= Puerto utilizado por la BBDD
+    DB_USERNAME= usuario de la BBDD
+    DB_PASSWORD= contraseña 
+    DB_DATABASE= nombre de la BBDD
 
     ````
 - Añadir el .jar del conector MySQL al classpath
